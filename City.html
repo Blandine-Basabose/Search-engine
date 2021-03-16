@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+    <link rel="stylesheet" href="City.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 style="color: rgb(8, 8, 8); margin-left: 380px; margin-top:150px;"><b>Discover the amazing states and cities of USA</b></h1>
+    <div>
+        <input type="text" name="search"  placeholder="state or city" id="search" class="search">
+            <button onclick="findOne()" id="button" class="button"><i class="fa fa-search"></i></button> </div>
+            <script>       
+            var input = document.getElementById("search");
+                input.addEventListener("keyup", function(event) {
+                  if (event.keyCode === 13) {
+                   event.preventDefault();
+                   document.getElementById("button").click();
+                  }
+                });
+                </script>
+            </div>
+            <div class="container"></div>
+   
+    
+    
+
+    <script src="City.js">
+ 
+    </script>
+</body>
+</html>
+
